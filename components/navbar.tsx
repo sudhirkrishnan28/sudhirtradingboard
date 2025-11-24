@@ -10,6 +10,7 @@ export default function Navbar() {
     { label: "Home", href: "/home" },
     { label: "Positions", href: "/positions" },
     { label: "Wallet", href: "/wallet" },
+    { label: "API Management", href: "/api-management" },
   ]
 
   return (
@@ -27,7 +28,7 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-4 py-2 rounded-md font-medium transition-colors ${
+                  className={`px-4 py-2 rounded-md font-medium transition-colors text-sm ${
                     isActive
                       ? "bg-primary text-primary-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted"
