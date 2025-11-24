@@ -7,7 +7,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navItems = [
-    { label: "Home", href: "/home" },
+    { label: "Home", href: "/" },
     { label: "Positions", href: "/positions" },
     { label: "Wallet", href: "/wallet" },
     { label: "API Management", href: "/api-management" },
@@ -17,8 +17,8 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-border bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/home" className="text-lg font-bold text-primary">
-            Trading Pro
+          <Link href="/" className="text-lg font-bold text-primary">
+            Sudhir Trading Board
           </Link>
 
           <div className="flex gap-1">
